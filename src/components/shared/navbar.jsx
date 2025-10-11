@@ -82,7 +82,7 @@ const Navbar = () => {
             <Link href='/'>الطلبات</Link>
           </li>
           <li>
-            <Link href='/'>المدونة</Link>
+            <Link href='/blogs'>المدونة</Link>
           </li>
         </ul>
         {/* auth fav and cart */}
@@ -127,7 +127,7 @@ const Navbar = () => {
                       <Link href='/'>الطلبات</Link>
                     </li>
                     <li>
-                      <Link href='/'>المدونة</Link>
+                      <Link href='/blogs'>المدونة</Link>
                     </li>
                   </ul>
                   {/* auth fav and cart */}

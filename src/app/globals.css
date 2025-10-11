@@ -41,12 +41,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-main-dark: #282828;
-  --color-main-navy: #054457;
-  --color-main-green: #3fb38b;
-  --color-main-light-green: #e1f9f1;
-  --color-main-light-gray: #f7f8f8;
-  --color-main-lighter-gray: #f8f9fe;
+
 }
 
 :root {
@@ -117,7 +112,14 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
-
+@theme{
+    --color-main-dark: #282828;
+  --color-main-navy: #054457;
+  --color-main-green: #3fb38b;
+  --color-main-light-green: #e1f9f1;
+  --color-main-light-gray: #f7f8f8;
+  --color-main-lighter-gray: #f8f9fe;
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;

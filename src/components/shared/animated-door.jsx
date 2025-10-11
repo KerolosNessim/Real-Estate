@@ -1,10 +1,11 @@
 "use client";
 
+import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 
 export default function AnimatedDoor() {
   return (
-    <div dir="ltr" className="px-2 bg-white  rounded-t-[50px] mx-auto w-[230px]">
+    <Link href="/estats" dir="ltr" className="block px-2 bg-white  rounded-t-[50px] mx-auto w-[230px]">
       <div className="relative   h-[268px] flex items-center justify-center   overflow-hidden">
       {/* الباب الشمال */}
       <motion.div
@@ -32,6 +33,6 @@ export default function AnimatedDoor() {
         <p className=" font-semibold">تحميل المزيد</p>
       </motion.div>
     </div>
-    </div>
+    </Link>
   );
 }

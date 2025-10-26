@@ -1,5 +1,6 @@
 import React from 'react'
 import EstateCard from './estate-card'
+import { HiArrowPath } from 'react-icons/hi2'
 
 const EstatesGrid = () => {
   return (
@@ -11,7 +12,7 @@ const EstatesGrid = () => {
         ))}
       </div>
       <div className='flex items-center justify-center'>
-        <button className='border-2 border-main-navy text-main-navy hover:bg-main-navy hover:text-white px-4 py-2 rounded-md'>عرض المزيد</button>
+        <button className='border border-main-navy text-main-navy hover:bg-main-navy hover:text-white px-4 py-2 rounded-s-lg flex items-center gap-2'> <HiArrowPath className='size-6 text-main-green' /> عرض المزيد</button>
       </div>
     </>
   )

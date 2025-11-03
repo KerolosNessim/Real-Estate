@@ -1,5 +1,20 @@
 {
   "home": "home page",
   "about": "about",
-  "contact": "contact"
+  "contact": "contact",
+  "Complaints": {
+    "complaint_form": "Complaint Form",
+    "complaint_type": "Complaint Type",
+    "select_type": "Select Type",
+    "phone_number": "Phone Number",
+    "enter_phone": "Enter phone number",
+    "email": "Email",
+    "enter_email": "Enter email address",
+    "submit_complaint": "Submit Complaint",
+    "submitting": "Submitting...",
+    "technical_issue": "Technical Issue",
+    "billing_issue": "Billing Issue",
+    "general_inquiry": "General Inquiry",
+    "other": "Other"
+  }
 }

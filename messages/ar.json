@@ -1,5 +1,20 @@
 {
   "home": "الصفحة الرئيسية",
   "about": "عن",
-  "contact": "اتصل بنا"
+  "contact": "اتصل بنا",
+  "Complaints": {
+    "complaint_form": "نموذج الشكاوى",
+    "complaint_type": "نوع الشكوى",
+    "select_type": "اختر النوع",
+    "phone_number": "رقم الهاتف",
+    "enter_phone": "أدخل رقم الهاتف",
+    "email": "البريد الإلكتروني",
+    "enter_email": "أدخل البريد الإلكتروني",
+    "submit_complaint": "إرسال الشكوى",
+    "submitting": "جاري الإرسال...",
+    "technical_issue": "مشكلة فنية",
+    "billing_issue": "مشكلة في الفاتورة",
+    "general_inquiry": "استفسار عام",
+    "other": "أخرى"
+  }
 }

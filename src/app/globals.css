@@ -147,6 +147,7 @@ clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
 
 
 
+/* Global scrollbar styles */
 ::-webkit-scrollbar {
   width: 5px; /* عرض الاسكرول */
   height: 5px; /* لو افقي */
@@ -157,7 +158,28 @@ clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background:var(--color-main-green) ; /* لون المقبض */
-  border-radius: 8px;
+  background: var(--color-main-green); /* لون المقبض */
+  border-radius: 3px;
 }
+
+/* Custom scrollbar for notifications */
+.notifction-scroll::-webkit-scrollbar {
+  width: 3px; /* عرض الاسكرول */
+  height: 3px; /* لو افقي */
+}
+
+.notifction-scroll::-webkit-scrollbar-track {
+  background:#DDE8F9; /* خلفية المسار */
+}
+
+.notifction-scroll::-webkit-scrollbar-thumb {
+  background: var(--color-main-green); /* لون المقبض */
+  border-radius: 3px;
+}
+
+
+
+
+
+
 

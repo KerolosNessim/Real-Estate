@@ -1,3 +1,4 @@
+"use client"
 import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import React from 'react'
@@ -6,6 +7,12 @@ import { MdArrowForwardIos } from 'react-icons/md'
 import FilterForm from '../shared/filter-form'
 
 const HeroSection = () => {
+  const whatsappNumber = "201068389295"; // بدون علامة + 
+  const message = encodeURIComponent("مرحباً، أنا مهتم بطلب استشارة خبير عقاري");
+  const handleWhatsApp = () => {
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+    window.open(whatsappUrl, "_blank");
+  };
   return (
     <section className='container  pt-12 p-6  bg-main-light-gray rounded-b-[3rem]  space-y-12'>
       {/* title */}
@@ -24,7 +31,7 @@ const HeroSection = () => {
           <Link href={'/about-us'} className='block w-fit bg-white group rounded-tr-2xl'>
             <div className='  bg-main-green text-white lg:py-4 lg:px-6 p-3 rounded-tr-2xl max-lg:text-xs  font-semibold flex items-center gap-2 w-fit translate-x-3 -translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:gap-3 transition-all duration-500'><FaLongArrowAltRight size={20} /> عرض المــزيد</div>
           </Link>
-          <button className='block w-fit bg-main-light-green group rounded-tr-2xl'>
+          <button onClick={handleWhatsApp} className='block w-fit bg-main-light-green group rounded-tr-2xl'>
             <div className='  bg-main-navy text-white lg:py-4 lg:px-6 p-3 rounded-tr-2xl max-lg:text-xs  font-semibold flex items-center gap-2 w-fit translate-x-3 -translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:gap-3 transition-all duration-500'><FaLongArrowAltRight size={20} /> استشير خبير عقاري</div>
           </button>
           </div>

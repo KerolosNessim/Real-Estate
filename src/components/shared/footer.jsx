@@ -37,18 +37,18 @@ const Footer = () => {
             <h4 className='font-bold text-lg mb-6'>روابط هامة</h4>
             <ul className='text-xs space-y-6'>
               <li>
-                <Link href={"/"} className='hover:text-main-green transition-all duration-300'>
-                  عملاء موثوقين
+                <Link href={"/about-us"} className='hover:text-main-green transition-all duration-300'>
+                  من نحن 
                 </Link>
               </li>
               <li>
-                <Link href={"/"} className='hover:text-main-green transition-all duration-300'>
-                  إيجار عقارات
+                <Link href={"/complaints"} className='hover:text-main-green transition-all duration-300'>
+                  الشكاوي
                 </Link>
               </li>
               <li>
-                <Link href={"/"} className='hover:text-main-green transition-all duration-300'>
-                  شراء عقارات
+                <Link href={"/blogs"} className='hover:text-main-green transition-all duration-300'>
+                  المدونه
                 </Link>
               </li>
 
@@ -59,26 +59,15 @@ const Footer = () => {
             <h4 className='font-bold text-lg mb-6'>خدماتنا</h4>
             <ul className='text-xs space-y-6'>
               <li>
-                <Link href={"/"} className='hover:text-main-green transition-all duration-300'>
-                  بيع عقارات
+                <Link href={"/estats"} className='hover:text-main-green transition-all duration-300'>
+                العقارات
                 </Link>
               </li>
               <li>
-                <Link href={"/"} className='hover:text-main-green transition-all duration-300'>
-                  شراء عقارات
+                <Link href={"/partners"} className='hover:text-main-green transition-all duration-300'>
+                الوكلاء
                 </Link>
               </li>
-              <li>
-                <Link href={"/"} className='hover:text-main-green transition-all duration-300'>
-                  إتصل بنا
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"} className='hover:text-main-green transition-all duration-300'>
-                  من نحــن
-                </Link>
-              </li>
-
             </ul>
           </div>
           {/* newsletter */}
@@ -92,11 +81,11 @@ const Footer = () => {
 
         {/* terms */}
         <div className='flex items-center gap-2'>
-          <Link href={"/"} className='text-xs hover:text-main-green transition-all duration-300'>
+          <Link href={"/user-manual"} className='text-xs hover:text-main-green transition-all duration-300'>
             شروط الخدمة
           </Link>
           <div className='w-[1px] h-4 bg-gray-400'></div>
-          <Link href={"/"} className='text-xs hover:text-main-green transition-all duration-300'>
+          <Link href={"/user-manual"} className='text-xs hover:text-main-green transition-all duration-300'>
             سياسة الخصوصية
           </Link>
         </div>

@@ -180,6 +180,61 @@ clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
 
 
 
+/* React Image Gallery Styles */
+/* Main gallery container */
+.image-gallery {
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
 
+/* Main image styling */
+.image-gallery-slide img {
+  max-height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+
+}
+
+/* Thumbnail container */
+.image-gallery-thumbnails-wrapper {
+  padding-block: 0.75rem;
+
+}
+
+/* Individual thumbnail */
+.image-gallery-thumbnail {
+  border: 2px solid transparent !important;
+  border-top-right-radius: 0.5rem !important;
+  overflow: hidden;
+  transition: all 0.3s ease !important;
+  width: 15% !important;
+}
+
+.image-gallery-thumbnail:hover,
+.image-gallery-thumbnail.active {
+  border-color: var(--color-main-green) !important;
+
+}
+
+.image-gallery-thumbnail img {
+  width: auto !important;
+  object-fit: cover;
+}
+
+
+
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  display: none;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-gallery-slide img {
+    max-height: 450px !important;
+  }
+}
 
 

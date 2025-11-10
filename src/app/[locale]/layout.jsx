@@ -6,6 +6,7 @@ import { getMessages } from 'next-intl/server';
 import { Alexandria } from 'next/font/google';
 import Footer from '@/components/shared/footer';
 import Navbar from '@/components/shared/navbar';
+import FloatingSocials from '@/components/shared/FloatingSocials';
 
 const alexandria = Alexandria({
   subsets: ['latin'],
@@ -31,11 +32,16 @@ export default async function RootLayout({ children, params }) {
     <html lang={locale}>
       <body
         dir={locale === "ar" ? "rtl" : "ltr"}
-        className={`${alexandria.className} antialiased text-main-navy`}
+        className={`${alexandria.className} antialiased text-main-navy relative`}
       >
         <NextIntlClientProvider messages={messages} locale={locale} >
+          <div className="fixed top-0 left-0 right-0 z-50">
           <Navbar/>
+          </div>
+          <div className="mt-40"> 
           {children}
+          </div>
+          <FloatingSocials/>
           <Footer/>
         </NextIntlClientProvider>
       </body>

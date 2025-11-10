@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const Partnercard = () => {
   return (
-    <Link href='/partners/1' className="border-2 border-gray-200 rounded-s-2xl overflow-hidden p-5 space-y-4">
+    <Link href='/partners/1' className="block border-2 border-gray-200 rounded-s-2xl overflow-hidden p-5 space-y-4">
       {/* img and info */}
       <div className="flex items-center gap-2">
         <Image src='/images/partner.png' alt='partner' width={300} height={300} className='size-11 object-cover' />

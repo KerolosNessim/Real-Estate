@@ -30,7 +30,7 @@ const StatesCard = ({withBorder=true}) => {
         </div>
       </div>
       {/* link */}
-      <Link href={'/estats/1'} className='text-sm font-medium block text-center w-3/4 mx-auto  rounded-md  py-2 px-3 border-1 border-main-green text-main-green hover:bg-main-green hover:text-white transition-all duration-300'>عرض السعر</Link>
+      <Link href={'/estats/1'} className='text-sm font-medium block text-center w-3/4 mx-auto  rounded-md  py-2 px-3 border-1 border-main-green text-main-green hover:bg-main-green hover:text-white transition-all duration-300'>عرض التفاصيل</Link>
     </div>
   )
 }

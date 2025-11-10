@@ -4,7 +4,11 @@ import { FiInbox, FiPhoneCall } from "react-icons/fi";
 import { TbBookmark, TbFlag3, TbMessage2, TbUserPentagon } from "react-icons/tb";
 import { HiOutlineHome } from "react-icons/hi2";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
 import {
   Sheet,
   SheetContent,
@@ -35,7 +39,7 @@ const LocationIcon = () => {
 
 const Navbar = () => {
   return (
-    <div className='container py-4 space-y-2'>
+    <div className='container py-4 space-y-2 bg-white'>
       {/* info */}
       <div className='text-black md:text-xs  md:flex hidden items-center gap-2'>
         {/* location */}
@@ -68,18 +72,42 @@ const Navbar = () => {
         {/* links */}
         <ul className='flex items-center gap-6 text-white text-sm max-md:hidden'>
           <li>
-            <Link href='/' className='relative flex items-center gap-1 before:rounded-full before:size-1 before:bg-main-green before:absolute before:-bottom-2 before:start-[60%]'>
+            <Link href='/' className='relative flex items-center gap-1 '>
               <HiOutlineHome className='text-main-green text-2xl' />
               الرئيسية</Link>
           </li>
           <li>
-            <Link href='/'>العروض</Link>
+
+            <HoverCard>
+              <HoverCardTrigger className="cursor-pointer">
+                <p className='cursor-pointer'>العقارات</p>
+              </HoverCardTrigger>
+              <HoverCardContent className={"w-fit p-6"}>
+                <ul className='flex flex-col items-center gap-4'>
+                  <li>
+                    <Link href='/estats' className='cursor-pointer hover:text-main-green'>عقارات الملاك</Link>
+                  </li>
+                  <li>
+                    <Link href='/estats' className='cursor-pointer hover:text-main-green'>العقارات الوكلاء</Link>
+                  </li>
+                  <li>
+                    <Link href='/estats' className='cursor-pointer hover:text-main-green'>عقارات المطوريين</Link>
+                  </li>
+                </ul>
+              </HoverCardContent>
+            </HoverCard>
           </li>
           <li>
-            <Link href='/'>البائعين</Link>
+            <Link href='/partners'>الوكلاء</Link>
           </li>
           <li>
-            <Link href='/'>الطلبات</Link>
+            <Link href='/offers'>العروض</Link>
+          </li>
+          <li>
+            <Link href='/ads'>الإعلانات </Link>
+          </li>
+          <li>
+            <Link href='/packages'>الباقات  </Link>
           </li>
           <li>
             <Link href='/blogs'>المدونة</Link>
@@ -87,13 +115,13 @@ const Navbar = () => {
         </ul>
         {/* auth fav and cart */}
         <div className='flex items-center gap-2 max-md:hidden'>
-          <Link href='/'>
+          <Link href='/wishlist'>
             <TbBookmark className='text-white text-2xl hover:text-main-green' />
           </Link>
-          <Link href='/'>
+          <Link href='/notifications'>
             <TbMessage2 className='text-white text-2xl hover:text-main-green' />
           </Link>
-          <Link href='/'>
+          <Link href='/auth/sign-up'>
             <TbUserPentagon className='text-white text-2xl hover:text-main-green' />
           </Link>
         </div>
@@ -113,18 +141,24 @@ const Navbar = () => {
                   {/* links */}
                   <ul className='flex flex-col items-center gap-4 text-white text-sm '>
                     <li>
-                      <Link href='/' className='relative flex items-center gap-1 before:rounded-full before:size-1 before:bg-main-green before:absolute before:-bottom-2 before:start-[60%]'>
+                      <Link href='/' className='relative flex items-center gap-1 '>
                         <HiOutlineHome className='text-main-green text-2xl' />
                         الرئيسية</Link>
                     </li>
                     <li>
-                      <Link href='/'>العروض</Link>
+                      <Link href='/estats'>العقارات</Link>
                     </li>
                     <li>
-                      <Link href='/'>البائعين</Link>
+                      <Link href='/partners'>الوكلاء</Link>
                     </li>
                     <li>
-                      <Link href='/'>الطلبات</Link>
+                      <Link href='/offers'>العروض</Link>
+                    </li>
+                    <li>
+                      <Link href='/ads'>الإعلانات</Link>
+                    </li>
+                    <li>
+                      <Link href='/packages'>الباقات</Link>
                     </li>
                     <li>
                       <Link href='/blogs'>المدونة</Link>
@@ -132,13 +166,13 @@ const Navbar = () => {
                   </ul>
                   {/* auth fav and cart */}
                   <div className='flex items-center justify-center gap-4 mt-8 '>
-                    <Link href='/'>
+                    <Link href='/wishlist'>
                       <TbBookmark className='text-white text-2xl hover:text-main-green' />
                     </Link>
-                    <Link href='/'>
+                    <Link href='/notifications'>
                       <TbMessage2 className='text-white text-2xl hover:text-main-green' />
                     </Link>
-                    <Link href='/'>
+                    <Link href='/auth/sign-up'>
                       <TbUserPentagon className='text-white text-2xl hover:text-main-green' />
                     </Link>
                   </div>

@@ -10,7 +10,7 @@ import { useLocale } from 'next-intl';
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import SectionHeader from '../shared/section-header';
 import StatesCard from '../shared/state-card';
-const StatesSection = () => {
+const StatesSection = ({title="عقارات مميزة",subTitle="أفضل العقارات المميزة",description="نقترح لك بعض أفضل العقارات المميزة  والموثوقة لدينا "}) => {
   const locale = useLocale();
   return (
     <section className='container  py-12 space-y-8'>
@@ -18,10 +18,10 @@ const StatesSection = () => {
       <div className='flex items-center justify-between max-md:flex-col max-md:gap-6'>
       <div className='space-y-6'>
         <SectionHeader>
-          عقارات مميزة
+          {title}
         </SectionHeader>
-        <h3 className='text-4xl font-semibold'>أفضل العقارات المميزة</h3>
-        <p className='text-xs'>نقترح لك بعض أفضل العقارات المميزة  والموثوقة لدينا </p>
+        <h3 className='text-4xl font-semibold'>{subTitle}</h3>
+        <p className='text-xs'>{description}</p>
         </div>
         {/* link */}
         <Link href={"/states"} className=' flex items-center gap-1 hover:gap-2 transation-all duration-300 text-main-green text-sm  w-fit'>

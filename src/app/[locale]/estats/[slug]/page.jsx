@@ -66,6 +66,12 @@ const EstateSinglePage = () => {
       thumbnail: `/images/state.png`,
     },
   ]
+  const whatsappNumber = "201068389295"; // بدون علامة + 
+  const message = encodeURIComponent("مرحباً، أنا مهتم بشراء هذا العقار وأريد معرفة المزيد من التفاصيل.");
+  const handleWhatsApp = () => {
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+    window.open(whatsappUrl, "_blank");
+  };
   return (
     <main className='space-y-12'>
       {/* header */}
@@ -106,7 +112,7 @@ const EstateSinglePage = () => {
             {/* actions */}
             <div className='flex flex-col gap-2 max-md:flex-row'>
               <button className='w-36 h-12 border border-main-navy text-xs font-medium text-main-navy hover:bg-main-navy hover:text-white px-4 py-2 rounded-s-lg flex items-center gap-2 transition-all duration-300'> <LuBellRing className='size-4 text-main-green' /> عرض المزيد</button>
-              <button className='w-36 h-12 text-xs font-medium text-white bg-main-green px-4 py-2 rounded-s-lg flex items-center gap-2 hover:gap-3 transition-all duration-300'> <FaLongArrowAltRight className='size-4 ' /> شراء الآن</button>
+              <button onClick={handleWhatsApp} className='w-36 h-12 text-xs font-medium text-white bg-main-green px-4 py-2 rounded-s-lg flex items-center gap-2 hover:gap-3 transition-all duration-300'> <FaLongArrowAltRight className='size-4 ' /> شراء الآن</button>
 
             </div>
           </div>
@@ -296,9 +302,20 @@ const EstateSinglePage = () => {
 
             </div>
           </div>
+          {/* ads */}
+          <div className='rounded-xl  border'>
+            {/* header */}
+            <div className='p-6 border-b'>
+              <h2 className='font-bold'> اعلان الهيئه العامه للعقار</h2>
+            </div>
+            {/* body */}
+            <div className='p-6 flex items-center justify-center' >
+              <Image src={"/images/qr.png"} alt='qr' width={200} height={200} className='size-40'/>
+            </div>
+          </div>
           {/* buttons */}
           <div className=' flex items-center justify-center gap-4'>
-            <button className='basis-1/3 bg-main-green text-white py-4 px-6 rounded-b-xl flex items-center gap-2 hover:bg-main-green/80 transition-all duration-300'> <FaWhatsapp className='size-4 text-white' /> واتساب</button>
+            <button onClick={handleWhatsApp} className='basis-1/3 bg-main-green text-white py-4 px-6 rounded-b-xl flex items-center gap-2 hover:bg-main-green/80 transition-all duration-300'> <FaWhatsapp className='size-4 text-white' /> واتساب</button>
             <button className='basis-1/3 bg-main-navy text-white py-4 px-6 rounded-b-xl flex items-center gap-2 hover:bg-main-navy/80 transition-all duration-300'><FaMessage className='size-4 text-white' />رساله</button>
             <button className='basis-1/3 bg-main-green text-white py-4 px-6 rounded-b-xl flex items-center gap-2 hover:bg-main-green/80 transition-all duration-300'><FaPhone className='size-4 text-white' />اتصل بنا</button>
           </div>

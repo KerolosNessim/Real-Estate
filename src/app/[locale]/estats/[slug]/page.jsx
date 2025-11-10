@@ -67,7 +67,7 @@ const EstateSinglePage = () => {
     },
   ]
   const whatsappNumber = "201068389295"; // بدون علامة + 
-  const message = encodeURIComponent("مرحباً، أنا مهتم بشراء هذا العقار وأريد معرفة المزيد من التفاصيل.");
+  const message = encodeURIComponent("مرحباً، أنا مهتم بشراء هذا العقار  ( فيلا جديدة في جدة) وأريد معرفة المزيد من التفاصيل.");
   const handleWhatsApp = () => {
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
     window.open(whatsappUrl, "_blank");

@@ -20,7 +20,7 @@ const HeroSection = () => {
           <p className='leading-8 lg:w-[85%] lg:text-base text-xs'>
             شركة الحلول العقارية هي شريكك الأول لتحقيق أحلامك العقارية بكل ثقة واطمئنان. نقدم لك مجموعة متكاملة من الخدمات تشمل البيع والشراء والتأجير وإدارة الأملاك،
           </p>
-          <Link href={'/about'} className='block w-fit bg-white group rounded-tr-2xl mx-auto'>
+          <Link href={'/about-us'} className='block w-fit bg-white group rounded-tr-2xl mx-auto'>
             <div className='  bg-main-green text-white lg:py-4 lg:px-6 p-3 rounded-tr-2xl max-lg:text-xs  font-semibold flex items-center gap-2 w-fit translate-x-3 -translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:gap-3 transition-all duration-500'><FaLongArrowAltRight size={20} /> عرض المــزيد</div>
           </Link>
         </div>

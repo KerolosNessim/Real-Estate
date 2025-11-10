@@ -38,7 +38,7 @@ const Footer = () => {
             <ul className='text-xs space-y-6'>
               <li>
                 <Link href={"/about-us"} className='hover:text-main-green transition-all duration-300'>
-                  من نحن 
+                  من نحن
                 </Link>
               </li>
               <li>
@@ -60,19 +60,19 @@ const Footer = () => {
             <ul className='text-xs space-y-6'>
               <li>
                 <Link href={"/estats"} className='hover:text-main-green transition-all duration-300'>
-                العقارات
+                  العقارات
                 </Link>
               </li>
               <li>
                 <Link href={"/partners"} className='hover:text-main-green transition-all duration-300'>
-                الوكلاء
+                  الوكلاء
                 </Link>
               </li>
             </ul>
           </div>
           {/* newsletter */}
           <div className='lg:w-1/3'>
-          <Newsletter/>
+            <Newsletter />
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@ const Footer = () => {
         {/* terms */}
         <div className='flex items-center gap-2'>
           <Link href={"/user-manual"} className='text-xs hover:text-main-green transition-all duration-300'>
-            شروط الخدمة
+            دليل المستخدم
           </Link>
           <div className='w-[1px] h-4 bg-gray-400'></div>
           <Link href={"/user-manual"} className='text-xs hover:text-main-green transition-all duration-300'>

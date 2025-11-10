@@ -100,17 +100,18 @@ const Navbar = () => {
           <li>
             <Link href='/partners'>الوكلاء</Link>
           </li>
-          <li>
-            <Link href='/offers'>العروض</Link>
-          </li>
-          <li>
-            <Link href='/ads'>الإعلانات </Link>
-          </li>
+
           <li>
             <Link href='/packages'>الباقات  </Link>
           </li>
           <li>
             <Link href='/blogs'>المدونة</Link>
+          </li>
+          <li>
+            <Link href='/'>العروض</Link>
+          </li>
+          <li>
+            <Link href='/'>الإعلانات </Link>
           </li>
         </ul>
         {/* auth fav and cart */}
@@ -152,10 +153,10 @@ const Navbar = () => {
                       <Link href='/partners'>الوكلاء</Link>
                     </li>
                     <li>
-                      <Link href='/offers'>العروض</Link>
+                      <Link href='/'>العروض</Link>
                     </li>
                     <li>
-                      <Link href='/ads'>الإعلانات</Link>
+                      <Link href='/'>الإعلانات</Link>
                     </li>
                     <li>
                       <Link href='/packages'>الباقات</Link>

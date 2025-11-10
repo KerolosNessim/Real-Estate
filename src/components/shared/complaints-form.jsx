@@ -22,6 +22,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { Textarea } from "../ui/textarea";
 
 const formSchema = z.object({
   complaintType: z.string({
@@ -32,6 +33,9 @@ const formSchema = z.object({
   }),
   email: z.string().email({
     message: "البريد الإلكتروني غير صالح",
+  }),
+  message: z.string().min(10, {
+    message: "يجب أن يتكون الرسالة من 10 أحرف على الأقل",
   }),
 })
 
@@ -53,6 +57,7 @@ const ComplaintsForm = () => {
       complaintType: "",
       phone: "",
       email: "",
+      message: "",
     },
   })
 
@@ -128,6 +133,25 @@ const ComplaintsForm = () => {
                     className={inputStyle}
                     dir="ltr"
                     type="tel"
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage className="text-xs" />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>نص الشكوى</FormLabel>
+                <FormControl>
+                  <Textarea
+                    placeholder={"نص الشكوى"}
+                    className={`${inputStyle} !h-30`}
+
+                    
                     {...field}
                   />
                 </FormControl>

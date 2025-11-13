@@ -108,7 +108,10 @@ const Navbar = () => {
             <Link href='/blogs'>المدونة</Link>
           </li>
           <li>
-            <Link href='/'>العروض</Link>
+            <Link href='/deals'>الصفقات</Link>
+          </li>
+          <li>
+            <Link href='/offers'>العروض</Link>
           </li>
           <li>
             <Link href='/'>الإعلانات </Link>
@@ -153,14 +156,17 @@ const Navbar = () => {
                       <Link href='/partners'>الوكلاء</Link>
                     </li>
                     <li>
-                      <Link href='/'>العروض</Link>
+                      <Link href='/offers'>العروض</Link>
                     </li>
                     <li>
                       <Link href='/'>الإعلانات</Link>
                     </li>
-                    <li>
-                      <Link href='/packages'>الباقات</Link>
-                    </li>
+                      <li>
+                        <Link href='/packages'>الباقات</Link>
+                      </li>
+                      <li>
+                        <Link href='/deals'>الصفقات</Link>
+                      </li>
                     <li>
                       <Link href='/blogs'>المدونة</Link>
                     </li>
